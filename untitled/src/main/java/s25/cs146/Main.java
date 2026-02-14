@@ -5,6 +5,7 @@ package s25.cs146;
 public class Main {
     public static void main(String[] args) {
         WordFreq[] objArry = new WordFreq[10];
+        buildMaxHeap heapify = new buildMaxHeap();
 
         objArry[0] = new WordFreq("happy",400);
         objArry[1] = new WordFreq("satisfied",100);
@@ -17,5 +18,16 @@ public class Main {
         objArry[8] = new WordFreq("would recommend to friends",800);
         objArry[9] = new WordFreq("visit the store",700);
 
+        System.out.println("Before");
+        for(int i = 0; i < objArry.length; i++){
+            System.out.println(objArry[i].frequency);
+        }
+        System.out.println();
+        heapify.BuildHeap(objArry);
+
+        System.out.println("After:");
+        for(int i = 0; i < objArry.length; i++){
+            System.out.println(objArry[i].frequency );
+        }
     }
 }
