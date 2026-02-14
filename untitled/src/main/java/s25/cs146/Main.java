@@ -4,7 +4,7 @@ package s25.cs146;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        Object[] objArry = new Object[10];
+        WordFreq[] objArry = new WordFreq[10];
 
         objArry[0] = new WordFreq("happy",400);
         objArry[1] = new WordFreq("satisfied",100);
